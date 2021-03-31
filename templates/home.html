@@ -1,0 +1,32 @@
+{% extends "_layout.html" %}
+{% block content %}        
+        <div class="container-fluid inContent">
+            <h2 style="color:black;">Spam Classificaton</h2>
+        </div>
+        <div class="main-container">
+            <form method="post" id="mainForm" action="{{ url_for('get_prediction') }}" class="form-group inContent">
+               
+                <label for="inputText">Input Text:</label><br><br>
+                <textarea id="inputText" name="text" rows="4" cols="30"></textarea><br><br>
+                
+                <p style="color:red;font-size: medium;">{{ validation_mssg }}</p>
+
+                <button type="submit" form="mainForm" class="btn btn-outline-info">Click to Check !</button>
+
+            </form>
+            <!-- <div class="inContent">
+                {% if classifier_result=="SPAM" %}
+                    <p style="color:black">Result : <span style="color:red; font-size: larger;">{{ classifier_result }}</span></p>
+                {% endif %}
+                
+                {% if classifier_result=="HAM" %}
+                    <p style="color:black">Result : <span style="color: green; font-size: larger;">{{ classifier_result }}</span></p>
+                {% endif %}
+
+                {% if classifier_result=="" %}
+                    <p style="color:black">Result : <span style="color: green; font-size: larger;"></span></p>
+                {% endif %}
+
+            </div> -->
+        </div>
+{% endblock content %}

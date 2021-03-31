@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+        <title>Spam Classification</title>
+
+    </head>
+    <body>
+        {% block content %}
+        {% endblock content %}
+        
+        <!-- <div class="container-fluid inContent">
+            <h2 style="color:black;">Spam Classificaton</h2>
+        </div>
+        <div class="main-container">
+            <form method="post" id="mainForm" action="{{ url_for('get_prediction') }}" class="form-group inContent">
+               
+                <label for="inputText">Input Text:</label><br><br>
+                <textarea id="inputText" name="text" rows="4" cols="30">{{ text_value }}</textarea><br><br>
+                
+                <p style="color:red;font-size: medium;">{{ validation_mssg }}</p>
+
+                <button type="submit" form="mainForm" class="btn btn-outline-info">Click to Check !</button>
+
+            </form>
+            <div class="inContent">
+                {% if classifier_result=="SPAM" %}
+                    <p style="color:black">Result : <span style="color:red; font-size: larger;">{{ classifier_result }}</span></p>
+                {% endif %}
+                
+                {% if classifier_result=="HAM" %}
+                    <p style="color:black">Result : <span style="color: green; font-size: larger;">{{ classifier_result }}</span></p>
+                {% endif %}
+
+                {% if classifier_result=="" %}
+                    <p style="color:black">Result : <span style="color: green; font-size: larger;"></span></p>
+                {% endif %}
+
+            </div>
+        </div> -->
+    </body>
+</html>
