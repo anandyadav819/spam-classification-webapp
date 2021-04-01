@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import re
 import os
 
-MODEL_PICKLE_PATH = "spam_clf_logistic.joblib"
+MODEL_PICKLE_PATH = "spam_clf_vc.joblib"
 TRANSFORMER_PICKLE_PATH  = "spam_clf_tfidf_transformer.joblib"
 PUNCT_NORMALIZER_PATH = "spam_clf_punct_transformer.joblib"
 CAP_NORMALIZER_PATH = "spam_clf_cap_transformer.joblib"
