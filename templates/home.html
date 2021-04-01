@@ -1,13 +1,16 @@
 {% extends "_layout.html" %}
 {% block content %}        
-        <div class="container-fluid inContent">
+        <!-- <div class="container-fluid inContent">
             <h2 style="color:black;">Spam Classificaton</h2>
-        </div>
+        </div> -->
         <div class="main-container">
+            <div class="container-fluid inContent">
+                <h2 style="color:black;">Spam Classificaton</h2>
+            </div>
             <form method="post" id="mainForm" action="{{ url_for('get_prediction') }}" class="form-group inContent">
                
                 <label for="inputText">Input Text:</label><br><br>
-                <textarea id="inputText" name="text" rows="4" cols="30"></textarea><br><br>
+                <textarea id="inputText" name="text" rows="4" cols="30" required></textarea><br><br>
                 
                 <p style="color:red;font-size: medium;">{{ validation_mssg }}</p>
 

@@ -23,8 +23,13 @@ label {
     width:50%;
     background-color:#f8edd3e5;
     padding:10px;
+    margin-top: 25px;
 }
 
 #resultText {
     font-size:large;    
+}
+
+textarea {
+    border-style: groove;
 }
